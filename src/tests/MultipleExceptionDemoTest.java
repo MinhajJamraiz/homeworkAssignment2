@@ -24,7 +24,7 @@ public class MultipleExceptionDemoTest {
 
     @Test
     void testInvalidIndex(){
-        String result = demo.devideAndAccess(10, 2, new int[]{5,10,15}, 10);
+        String result = demo.devideAndAccess(10, 2, new int[]{5,10,15}, 3);
         assertTrue(result.startsWith("Error"));
     }
 
@@ -36,7 +36,7 @@ public class MultipleExceptionDemoTest {
 
     @Test
     void testNegativeValues(){
-        String result = demo.devideAndAccess(-10, -2, new int[]{1,2,3}, 0);
+        String result = demo.devideAndAccess(-10, -2, new int[]{1,2,3}, 2);
         assertTrue(result.contains("Value"));
     }
     
